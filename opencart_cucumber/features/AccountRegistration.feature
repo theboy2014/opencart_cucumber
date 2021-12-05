@@ -1,5 +1,6 @@
 Feature: Account Registration
 
+  @regression
   Scenario: Successful Account Registration with Valid user details
     Given User Launch browser
     And opens URL "https://demo.opencart.com/"

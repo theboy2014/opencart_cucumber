@@ -20,6 +20,7 @@ Feature: LoginDDT
       | pavanoltraining@gmail.com | test123  |
       | pavanol@gmail.com         | test123  |
 
+  @sanity @regression
   Scenario Outline: Login Data Driven2
 #    Given User Launch browser
 #    And opens URL "https://demo.opencart.com/"

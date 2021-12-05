@@ -24,9 +24,29 @@ import org.junit.runner.RunWith;
                 After adding scenario in accoutn registration feature page the step that are not implemented will be
                 highlited and if you run the testrun it will provide tose steps and you just need to copy them
                 */
-                features= {".//Features/Login.feature",".//Features/AccountRegistration.feature"}, //this will exe
+                features= {".//Features/"}, //execute allfeatures
+                //features= {".//Features/Login.feature",".//Features/AccountRegistration.feature"}, //this will exe
                 glue="stepDefinitions",
+                plugin= {"pretty","html:reports/myreport.html"},
                 dryRun=false
+                //tags = "@sanity"
+
+                /*
+                features= {".//Features/"},
+                //features= {".//Features/Login.feature"},
+                //features= {".//Features/LoginDDT.feature"},
+                //features= {".//Features/AccountRegistration.feature"},
+
+                glue="stepDefinitions",
+                dryRun=false,
+                monochrome=true,
+                //tags = "@sanity"	//Scenarios tagged with @sanity
+                //tags = "@sanity and @regression"		//Scenarios tagged with both @sanity and @regression
+                //tags = "@sanity or @regression"	 //Scenarios tagged with either @sanity or @regression
+                tags = "@sanity and not @regression" //Scenarios tagged with @sanity but not tagged with @regression
+                the scenario with both sanity and regretion will not execute
+                //plugin= {"pretty","html:test-output"} / search build in report plug in cucumber
+                 */
 
         )
 
